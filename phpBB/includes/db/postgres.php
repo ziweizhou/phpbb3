@@ -268,15 +268,15 @@ class dbal_postgres extends dbal
 			if (preg_match("/^INSERT[\t\n ]+INTO[\t\n ]+([a-z0-9\_\-]+)/is", $this->last_query_text, $tablename))
 			{
 				$query = "SELECT currval('" . $tablename[1] . "_seq') AS last_value";
-				$temp_q_id = @pg_query($this->db_connect_id, $query);
+				$temp_q_id = pg_query($this->db_connect_id, $query);
 
 				if (!$temp_q_id)
 				{
 					return false;
 				}
 
-				$temp_result = @pg_fetch_assoc($temp_q_id, NULL);
-				@pg_free_result($query_id);
+				$temp_result = pg_fetch_assoc($temp_q_id, NULL);
+				pg_free_result($temp_q_id);
 
 				return ($temp_result) ? $temp_result['last_value'] : false;
 			}
@@ -336,10 +336,14 @@ class dbal_postgres extends dbal
 
 	function sql_handle_data($type, $table, $data, $where = '')
 	{
-		// for now, stmtname is an empty string, it might change to something more unique in the future
+		foreach ($data as $key => $value)
+		{
+			assert($value !== NULL);
+		}
+
 		if ($type === 'INSERT')
 		{
-			$stmt = pg_prepare($this->dbms_type, '', "INSERT INTO $table (". implode(', ', array_keys($data)) . ") VALUES ($" . implode(', $', range(1, sizeof($data))) . ')');
+			$query = "INSERT INTO $table (". implode(', ', array_keys($data)) . ') VALUES ($' . implode(', $', range(1, sizeof($data))) . ')';
 		}
 		else
 		{
@@ -348,25 +352,19 @@ class dbal_postgres extends dbal
 			$set = array();
 			foreach (array_keys($data) as $key_id => $key)
 			{
-				$set[] = $key . ' = $' . $key_id;
+				$set[] = $key . ' = $' . ($key_id + 1);
 			}
 			$query .= implode(', ', $set);
 
 			if ($where !== '')
 			{
-				$query .= $where;
+				$query .= ' WHERE ' . $where;
 			}
-			
-			$stmt = pg_prepare($this->db_connect_id, '', $query);
 		}
 
-		// add the stmtname to the top
-		array_unshift($data, '');
+		$this->last_query_text = $query;
 
-		// add the connection resource
-		array_unshift($data, $this->db_connect_id);
-
-		call_user_func_array('pg_execute', $data);
+		return pg_query_params($this->db_connect_id, $query, $data);
 	}
 
 	/**
