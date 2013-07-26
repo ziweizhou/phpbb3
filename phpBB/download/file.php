@@ -41,7 +41,7 @@ if (isset($_GET['avatar']))
 		exit;
 	}
 
-	require($phpbb_root_path . 'includes/class_loader.' . $phpEx);
+	require($phpbb_root_path . 'phpbb/class_loader.' . $phpEx);
 
 	require($phpbb_root_path . 'includes/constants.' . $phpEx);
 	require($phpbb_root_path . 'includes/functions.' . $phpEx);
