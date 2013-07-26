@@ -17,3 +17,15 @@
 /tests/phpbb_unit_tests.sqlite2
 /tests/test_config.php
 /tests/tmp/*
+phpBB/phpbb.sublime-project
+phpBB/phpbb.sublime-workspace
+phpBB/styles/menus/theme/.sass-cache/036d4146b30a7d74206c01c15a0c22e50488f8f9/bootstrap.cssc
+phpBB/styles/menus/theme/.sass-cache/036d4146b30a7d74206c01c15a0c22e50488f8f9/buttons.cssc
+phpBB/styles/menus/theme/.sass-cache/036d4146b30a7d74206c01c15a0c22e50488f8f9/colours.cssc
+phpBB/styles/menus/theme/.sass-cache/036d4146b30a7d74206c01c15a0c22e50488f8f9/common.cssc
+phpBB/styles/menus/theme/.sass-cache/036d4146b30a7d74206c01c15a0c22e50488f8f9/content.cssc
+phpBB/styles/menus/theme/.sass-cache/036d4146b30a7d74206c01c15a0c22e50488f8f9/cp.cssc
+phpBB/styles/menus/theme/.sass-cache/036d4146b30a7d74206c01c15a0c22e50488f8f9/forms.cssc
+phpBB/styles/menus/theme/.sass-cache/036d4146b30a7d74206c01c15a0c22e50488f8f9/imageset.cssc
+phpBB/styles/menus/theme/.sass-cache/036d4146b30a7d74206c01c15a0c22e50488f8f9/links.cssc
+phpBB/styles/menus/theme/.sass-cache/e1c51c9e0fe0eb457ad710d480775a8c09d26487/bootstrap.cssc

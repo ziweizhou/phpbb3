@@ -1,0 +1,216 @@
+/* Link Styles
+---------------------------------------- */
+/* Links adjustment to correctly display an order of rtl/ltr mixed content */
+/* line 5, scss/links.scss */
+a {
+  direction: ltr;
+  unicode-bidi: embed; }
+
+/* line 10, scss/links.scss */
+a:link, a:visited {
+  text-decoration: none; }
+
+/* line 14, scss/links.scss */
+a:hover {
+  text-decoration: underline; }
+
+/* line 18, scss/links.scss */
+a:active {
+  text-decoration: none; }
+
+/* Coloured usernames */
+/* line 23, scss/links.scss */
+.username-coloured {
+  font-weight: bold;
+  display: inline !important;
+  padding: 0 !important; }
+
+/* Links on gradient backgrounds */
+/* line 30, scss/links.scss */
+#search-box a:link, .navbg a:link, .forumbg .header a:link, .forabg .header a:link, th a:link {
+  text-decoration: none; }
+
+/* line 34, scss/links.scss */
+#search-box a:visited, .navbg a:visited, .forumbg .header a:visited, .forabg .header a:visited, th a:visited {
+  text-decoration: none; }
+
+/* line 38, scss/links.scss */
+#search-box a:hover, .navbg a:hover, .forumbg .header a:hover, .forabg .header a:hover, th a:hover {
+  text-decoration: underline; }
+
+/* line 42, scss/links.scss */
+#search-box a:active, .navbg a:active, .forumbg .header a:active, .forabg .header a:active, th a:active {
+  text-decoration: none; }
+
+/* Links for forum/topic lists */
+/* line 47, scss/links.scss */
+a.forumtitle {
+  font-family: "Trebuchet MS", Helvetica, Arial, Sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none; }
+
+/* line 54, scss/links.scss */
+a.forumtitle:hover {
+  text-decoration: underline; }
+
+/* line 58, scss/links.scss */
+a.topictitle {
+  font-family: "Trebuchet MS", Helvetica, Arial, Sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none; }
+
+/* line 65, scss/links.scss */
+a.topictitle:hover {
+  text-decoration: underline; }
+
+/* line 69, scss/links.scss */
+a.lastsubject {
+  font-weight: bold;
+  text-decoration: none; }
+
+/* line 74, scss/links.scss */
+a.lastsubject:hover {
+  text-decoration: underline; }
+
+/* Post body links */
+/* line 79, scss/links.scss */
+.postlink {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 0; }
+
+/* line 85, scss/links.scss */
+.postlink:hover {
+  text-decoration: none; }
+
+/* line 89, scss/links.scss */
+.signature a, .signature a:visited, .signature a:hover, .signature a:active {
+  border: none;
+  text-decoration: underline; }
+
+/* Profile links */
+/* line 95, scss/links.scss */
+.postprofile a:link, .postprofile a:visited, .postprofile dt.author a {
+  font-weight: bold;
+  text-decoration: none; }
+
+/* line 100, scss/links.scss */
+.postprofile a:hover, .postprofile dt.author a:hover {
+  text-decoration: underline; }
+
+/* CSS spec requires a:link, a:visited, a:hover and a:active rules to be specified in this order. */
+/* See http://www.phpbb.com/bugs/phpbb3/59685 */
+/* line 106, scss/links.scss */
+.postprofile a:active {
+  font-weight: bold;
+  text-decoration: none; }
+
+/* Profile searchresults */
+/* line 113, scss/links.scss */
+.search .postprofile a {
+  text-decoration: none;
+  font-weight: normal; }
+
+/* line 118, scss/links.scss */
+.search .postprofile a:hover {
+  text-decoration: underline; }
+
+/* Back to top of page */
+/* line 123, scss/links.scss */
+.back2top {
+  clear: both;
+  height: 11px;
+  text-align: right; }
+
+/* line 129, scss/links.scss */
+a.top {
+  background: none no-repeat top left;
+  text-decoration: none;
+  width: 11px;
+  height: 11px;
+  display: block;
+  float: right;
+  overflow: hidden;
+  letter-spacing: 1000px;
+  text-indent: 11px; }
+
+/* line 141, scss/links.scss */
+a.top2 {
+  background: none no-repeat 0 50%;
+  text-decoration: none;
+  padding-left: 15px; }
+
+/* Arrow links  */
+/* line 148, scss/links.scss */
+a.arrow-up {
+  background: none no-repeat left center; }
+
+/* line 149, scss/links.scss */
+a.arrow-down {
+  background: none no-repeat right center; }
+
+/* line 150, scss/links.scss */
+a.arrow-left {
+  background: none no-repeat 3px 60%; }
+
+/* line 151, scss/links.scss */
+a.arrow-right {
+  background: none no-repeat 95% 60%; }
+
+/* line 153, scss/links.scss */
+a.arrow-up, a.arrow-up:link, a.arrow-up:active, a.arrow-up:visited {
+  padding-left: 10px;
+  text-decoration: none;
+  border-bottom-width: 0; }
+
+/* line 159, scss/links.scss */
+a.arrow-up:hover {
+  background-position: left top; }
+
+/* line 163, scss/links.scss */
+a.arrow-down, a.arrow-down:link, a.arrow-down:active, a.arrow-down:visited {
+  padding-right: 10px; }
+
+/* line 167, scss/links.scss */
+a.arrow-down:hover {
+  background-position: right bottom;
+  text-decoration: none; }
+
+/* line 172, scss/links.scss */
+a.arrow-left, a.arrow-left:active, a.arrow-left:visited {
+  padding-left: 12px; }
+
+/* line 176, scss/links.scss */
+a.arrow-left:hover {
+  text-decoration: none;
+  background-position: 0 60%; }
+
+/* line 181, scss/links.scss */
+a.arrow-right, a.arrow-right:active, a.arrow-right:visited {
+  padding-right: 12px; }
+
+/* line 185, scss/links.scss */
+a.arrow-right:hover {
+  text-decoration: none;
+  background-position: 100% 60%; }
+
+/* invisible skip link, used for accessibility  */
+/* line 191, scss/links.scss */
+.skiplink {
+  position: absolute;
+  left: -999px;
+  width: 990px; }
+
+/* Feed icon in forumlist_body.html */
+/* line 198, scss/links.scss */
+a.feed-icon-forum {
+  float: right;
+  margin: 3px; }
+
+/* line 202, scss/links.scss */
+.register-link {
+  margin-top: 5px;
+  border-left: 1px solid white;
+  padding-left: 15px; }

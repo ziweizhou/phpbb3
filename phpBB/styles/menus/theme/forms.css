@@ -1,0 +1,388 @@
+/* Form Styles
+---------------------------------------- */
+/* General form styles
+----------------------------------------*/
+/* line 6, scss/forms.scss */
+fieldset {
+  border-width: 0;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 1.1em; }
+
+/* line 12, scss/forms.scss */
+input {
+  font-weight: normal;
+  cursor: pointer;
+  vertical-align: middle;
+  padding: 0 3px;
+  font-size: 12px;
+  font-family: Verdana, Helvetica, Arial, sans-serif; }
+
+/* line 21, scss/forms.scss */
+select {
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  cursor: pointer;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  padding: 1px;
+  font-size: 1em; }
+
+/* line 31, scss/forms.scss */
+option {
+  padding-right: 1em; }
+
+/* line 35, scss/forms.scss */
+select optgroup option {
+  padding-right: 1em;
+  font-family: Verdana, Helvetica, Arial, sans-serif; }
+
+/* line 40, scss/forms.scss */
+textarea {
+  font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+  width: 60%;
+  padding: 2px;
+  font-size: 1em;
+  line-height: 1.4em; }
+
+/* line 48, scss/forms.scss */
+label {
+  cursor: default;
+  padding-right: 5px; }
+
+/* line 53, scss/forms.scss */
+label input {
+  vertical-align: middle; }
+
+/* line 57, scss/forms.scss */
+label img {
+  vertical-align: middle; }
+
+/* Definition list layout for forms
+---------------------------------------- */
+/* line 63, scss/forms.scss */
+fieldset dl {
+  padding: 4px 0; }
+
+/* line 67, scss/forms.scss */
+fieldset dt {
+  float: left;
+  width: 40%;
+  text-align: left;
+  display: block; }
+
+/* line 74, scss/forms.scss */
+fieldset dd {
+  margin-left: 41%;
+  vertical-align: top;
+  margin-bottom: 3px; }
+
+/* Specific layout 1 */
+/* line 81, scss/forms.scss */
+fieldset.fields1 dt {
+  width: 15em;
+  border-right-width: 0; }
+
+/* line 86, scss/forms.scss */
+fieldset.fields1 dd {
+  margin-left: 15em;
+  border-left-width: 0; }
+
+/* line 91, scss/forms.scss */
+fieldset.fields1 div {
+  margin-bottom: 3px; }
+
+/* Set it back to 0px for the reCaptcha divs: PHPBB3-9587 */
+/* line 96, scss/forms.scss */
+fieldset.fields1 #recaptcha_widget_div div {
+  margin-bottom: 0; }
+
+/* Specific layout 2 */
+/* line 101, scss/forms.scss */
+fieldset.fields2 dt {
+  width: 15em;
+  border-right-width: 0; }
+
+/* line 106, scss/forms.scss */
+fieldset.fields2 dd {
+  margin-left: 16em;
+  border-left-width: 0; }
+
+/* Form elements */
+/* line 112, scss/forms.scss */
+dt label {
+  font-weight: bold;
+  text-align: left; }
+
+/* line 117, scss/forms.scss */
+dd label {
+  white-space: nowrap; }
+
+/* line 121, scss/forms.scss */
+dd input, dd textarea {
+  margin-right: 3px; }
+
+/* line 125, scss/forms.scss */
+dd select {
+  width: auto; }
+
+/* line 129, scss/forms.scss */
+dd textarea {
+  width: 85%; }
+
+/* Hover effects */
+/* line 134, scss/forms.scss */
+#timezone {
+  width: 95%; }
+
+/* Quick-login on index page */
+/* line 139, scss/forms.scss */
+fieldset.quick-login {
+  margin-top: 0;
+  width: 60%; }
+
+/* line 144, scss/forms.scss */
+fieldset.quick-login input {
+  width: auto; }
+
+/* line 148, scss/forms.scss */
+fieldset.quick-login input.inputbox {
+  width: 15%;
+  vertical-align: middle;
+  margin-right: 5px; }
+
+/* line 154, scss/forms.scss */
+fieldset.quick-login label {
+  white-space: nowrap;
+  padding-right: 2px; }
+
+/* Display options on viewtopic/viewforum pages  */
+/* line 160, scss/forms.scss */
+fieldset.display-options {
+  text-align: center;
+  margin: 3px 0 5px 0; }
+
+/* line 165, scss/forms.scss */
+fieldset.display-options label {
+  white-space: nowrap;
+  padding-right: 2px; }
+
+/* line 170, scss/forms.scss */
+fieldset.display-options a {
+  margin-top: 3px; }
+
+/* Display actions for ucp and mcp pages */
+/* line 175, scss/forms.scss */
+fieldset.display-actions {
+  text-align: right;
+  line-height: 2em;
+  white-space: nowrap;
+  padding-right: 1em; }
+
+/* line 182, scss/forms.scss */
+fieldset.display-actions label {
+  white-space: nowrap;
+  padding-right: 2px; }
+
+/* line 187, scss/forms.scss */
+fieldset.sort-options {
+  line-height: 2em; }
+
+/* MCP forum selection*/
+/* line 192, scss/forms.scss */
+fieldset.forum-selection {
+  margin: 5px 0 3px 0;
+  float: right; }
+
+/* line 197, scss/forms.scss */
+fieldset.forum-selection2 {
+  margin: 13px 0 3px 0;
+  float: right; }
+
+/* Jumpbox */
+/* line 203, scss/forms.scss */
+fieldset.jumpbox {
+  text-align: right;
+  margin-top: 15px;
+  height: 2.5em; }
+
+/* line 209, scss/forms.scss */
+fieldset.quickmod {
+  width: 50%;
+  float: right;
+  text-align: right;
+  height: 2.5em; }
+
+/* Submit button fieldset */
+/* line 217, scss/forms.scss */
+fieldset.submit-buttons {
+  text-align: center;
+  vertical-align: middle;
+  margin: 5px 0; }
+
+/* line 223, scss/forms.scss */
+fieldset.submit-buttons input {
+  vertical-align: middle;
+  padding-top: 3px;
+  padding-bottom: 3px; }
+
+/* Posting page styles
+----------------------------------------*/
+/* Buttons used in the editor */
+/* line 233, scss/forms.scss */
+#format-buttons {
+  margin: 15px 0 2px 0; }
+
+/* line 237, scss/forms.scss */
+#format-buttons input, #format-buttons select {
+  vertical-align: middle; }
+
+/* Main message box */
+/* line 242, scss/forms.scss */
+#message-box {
+  width: 80%; }
+
+/* line 246, scss/forms.scss */
+#message-box textarea {
+  font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+  width: 450px;
+  height: 270px;
+  min-width: 100%;
+  max-width: 100%;
+  font-size: 1.2em; }
+
+/* Emoticons panel */
+/* line 256, scss/forms.scss */
+#smiley-box {
+  width: 18%;
+  float: right; }
+
+/* line 261, scss/forms.scss */
+#smiley-box img {
+  margin: 3px; }
+
+/* Input field styles
+---------------------------------------- */
+/* line 267, scss/forms.scss */
+.inputbox {
+  border: 1px solid transparent;
+  padding: 2px;
+  cursor: text; }
+
+/* line 273, scss/forms.scss */
+.inputbox:hover, .inputbox:focus {
+  border: 1px solid transparent; }
+
+/* line 277, scss/forms.scss */
+input.inputbox {
+  width: 85%; }
+
+/* line 278, scss/forms.scss */
+input.medium {
+  width: 50%; }
+
+/* line 279, scss/forms.scss */
+input.narrow {
+  width: 25%; }
+
+/* line 280, scss/forms.scss */
+input.tiny {
+  width: 125px; }
+
+/* line 282, scss/forms.scss */
+textarea.inputbox {
+  width: 85%; }
+
+/* line 286, scss/forms.scss */
+.autowidth {
+  width: auto !important; }
+
+/* line 290, scss/forms.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box; }
+
+/* line 295, scss/forms.scss */
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-results-button, input[type="search"]::-webkit-search-results-decoration {
+  display: none; }
+
+/* Form button styles
+---------------------------------------- */
+/* line 301, scss/forms.scss */
+input.button1, input.button2 {
+  font-size: 1em; }
+
+/* line 305, scss/forms.scss */
+a.button1, input.button1, input.button3, a.button2, input.button2 {
+  width: auto !important;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+  background: transparent none repeat-x top left; }
+
+/* line 313, scss/forms.scss */
+a.button1, input.button1 {
+  font-weight: bold;
+  border: 1px solid transparent; }
+
+/* line 318, scss/forms.scss */
+input.button3 {
+  padding: 0;
+  margin: 0;
+  line-height: 5px;
+  height: 12px;
+  background-image: none;
+  font-variant: small-caps; }
+
+/* Alternative button */
+/* line 328, scss/forms.scss */
+a.button2, input.button2, input.button3 {
+  border: 1px solid transparent; }
+
+/* <a> button in the style of the form buttons */
+/* line 333, scss/forms.scss */
+a.button1, a.button1:link, a.button1:visited, a.button1:active, a.button2, a.button2:link, a.button2:visited, a.button2:active {
+  text-decoration: none;
+  padding: 2px 8px;
+  line-height: 250%;
+  vertical-align: text-bottom;
+  background-position: 0 1px; }
+
+/* Hover states */
+/* line 342, scss/forms.scss */
+a.button1:hover, input.button1:hover, a.button2:hover, input.button2:hover, input.button3:hover {
+  border: 1px solid transparent;
+  background-position: 0 100%; }
+
+/* line 347, scss/forms.scss */
+input.disabled {
+  font-weight: normal; }
+
+/* Topic and forum Search */
+/* line 352, scss/forms.scss */
+.search-box {
+  margin-top: 0;
+  margin-left: 5px;
+  float: left; }
+
+/* line 362, scss/forms.scss */
+input.search {
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: left 1px;
+  padding-left: 17px; }
+
+/* line 369, scss/forms.scss */
+.full {
+  width: 95%; }
+
+/* line 370, scss/forms.scss */
+.medium {
+  width: 50%; }
+
+/* line 371, scss/forms.scss */
+.narrow {
+  width: 25%; }
+
+/* line 372, scss/forms.scss */
+.tiny {
+  width: 10%; }

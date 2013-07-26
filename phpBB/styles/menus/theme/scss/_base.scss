@@ -1,0 +1,14 @@
+@import "compass/css3";
+@import "compass/utilities";
+
+$base-font-size: 16px;
+
+@function em($target, $context: $base-font-size) {
+	@if $target == 0 { @return 0 }
+	@return $target / $context + 0em;
+}
+
+@function percent($target, $orig:1000px) {
+	@if $target == 0 { @return 0 }
+	@return $target / $orig * 100 + 0%;
+}
