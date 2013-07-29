@@ -123,11 +123,11 @@ a.topictitle:active {
 
 /* line 137, scss/colours.scss */
 .forabg {
-  background-color: darkgrey; }
+  background-color: #333; }
 
 /* line 142, scss/colours.scss */
 .forumbg {
-  background-color: darkgrey; }
+  background-color: #333; }
 
 /* line 147, scss/colours.scss */
 .panel {

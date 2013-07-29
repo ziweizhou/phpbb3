@@ -163,10 +163,6 @@ dl.icon dt .list-inner {
   padding-left: 45px;
   /* Space for folder icon */ }
 
-/* line 165, scss/content.scss */
-dl.icon dt, dl.icon dd {
-  min-height: 60px; }
-
 /* line 169, scss/content.scss */
 dd.posts, dd.topics, dd.views, dd.extra, dd.mark {
   width: 80px;

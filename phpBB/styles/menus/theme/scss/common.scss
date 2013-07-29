@@ -284,6 +284,10 @@ a#logo:hover {
 	padding: 5px;
 	clear: both;
 	border-radius: 7px;
+
+	dl.icon dt, dl.icon dd{
+		min-height: 60px;
+	}
 }
 
 .forumbg {
@@ -293,8 +297,8 @@ a#logo:hover {
 	clear: both;
 	border-radius: 7px;
 
-	.list-inner{
-		padding-top: 12px;
+	dl.icon dt, dl.icon dd{
+		min-height: 35px;
 	}
 }
 
