@@ -19,6 +19,10 @@ ul.topiclist li {
 	display: block;
 	list-style-type: none;
 	margin: 0;
+
+	&.header a{
+		margin-left: 5px;
+	}
 }
 
 ul.topiclist dl {
@@ -26,7 +30,7 @@ ul.topiclist dl {
 }
 
 ul.topiclist li.row dl {
-	padding: 2px 0;
+	padding: 0;
 }
 
 ul.topiclist dt, ul.topiclist dd {

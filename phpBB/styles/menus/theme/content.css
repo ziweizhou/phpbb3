@@ -18,57 +18,60 @@ ul.topiclist li {
   display: block;
   list-style-type: none;
   margin: 0; }
+  /* line 23, scss/content.scss */
+  ul.topiclist li.header a {
+    margin-left: 5px; }
 
-/* line 24, scss/content.scss */
+/* line 28, scss/content.scss */
 ul.topiclist dl {
   position: relative; }
 
-/* line 28, scss/content.scss */
-ul.topiclist li.row dl {
-  padding: 2px 0; }
-
 /* line 32, scss/content.scss */
+ul.topiclist li.row dl {
+  padding: 0; }
+
+/* line 36, scss/content.scss */
 ul.topiclist dt, ul.topiclist dd {
   display: block;
   float: left; }
 
-/* line 37, scss/content.scss */
+/* line 41, scss/content.scss */
 ul.topiclist dt {
   width: 100%;
   margin-right: -410px;
   font-size: 1.1em; }
 
-/* line 43, scss/content.scss */
+/* line 47, scss/content.scss */
 ul.topiclist.missing-column dt {
   margin-right: -330px; }
 
-/* line 47, scss/content.scss */
+/* line 51, scss/content.scss */
 ul.topiclist.two-long-columns dt {
   margin-right: -250px; }
 
-/* line 51, scss/content.scss */
+/* line 55, scss/content.scss */
 ul.topiclist.two-columns dt {
   margin-right: -80px; }
 
-/* line 55, scss/content.scss */
+/* line 59, scss/content.scss */
 ul.topiclist dt .list-inner {
   margin-right: 410px;
   padding-left: 5px;
   padding-right: 5px; }
 
-/* line 61, scss/content.scss */
+/* line 65, scss/content.scss */
 ul.topiclist.missing-column dt .list-inner {
   margin-right: 330px; }
 
-/* line 65, scss/content.scss */
+/* line 69, scss/content.scss */
 ul.topiclist.two-long-columns dt .list-inner {
   margin-right: 250px; }
 
-/* line 69, scss/content.scss */
+/* line 73, scss/content.scss */
 ul.topiclist.two-columns dt .list-inner {
   margin-right: 80px; }
 
-/* line 73, scss/content.scss */
+/* line 77, scss/content.scss */
 ul.topiclist dd {
   border-left: 1px solid transparent;
   padding: 4px 0;
@@ -76,14 +79,14 @@ ul.topiclist dd {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 81, scss/content.scss */
+/* line 85, scss/content.scss */
 ul.topiclist dfn {
   /* Labels for post/view counts */
   position: absolute;
   left: -999px;
   width: 990px; }
 
-/* line 88, scss/content.scss */
+/* line 92, scss/content.scss */
 ul.topiclist li.row dt a.subforum {
   background-image: none;
   background-position: 0 50%;
@@ -92,22 +95,22 @@ ul.topiclist li.row dt a.subforum {
   white-space: nowrap;
   padding: 0 0 0 12px; }
 
-/* line 97, scss/content.scss */
+/* line 101, scss/content.scss */
 .forum-image {
   float: left;
   padding-top: 5px;
   margin-right: 5px; }
 
-/* line 103, scss/content.scss */
+/* line 107, scss/content.scss */
 li.row {
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent; }
 
-/* line 108, scss/content.scss */
+/* line 112, scss/content.scss */
 li.row strong {
   font-weight: normal; }
 
-/* line 112, scss/content.scss */
+/* line 116, scss/content.scss */
 li.header dt, li.header dd {
   line-height: 1em;
   border-left-width: 0;
@@ -118,52 +121,52 @@ li.header dt, li.header dd {
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase; }
 
-/* line 123, scss/content.scss */
+/* line 127, scss/content.scss */
 li.header dt {
   font-weight: bold;
   width: 100%;
   margin-right: -410px; }
 
-/* line 129, scss/content.scss */
+/* line 133, scss/content.scss */
 li.header dt .list-inner {
   margin-right: 410px; }
 
-/* line 133, scss/content.scss */
+/* line 137, scss/content.scss */
 li.header dd {
   padding-left: 1px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 140, scss/content.scss */
+/* line 144, scss/content.scss */
 li.header dl.icon dt, li.header dl.icon dd {
   min-height: 0; }
 
-/* line 144, scss/content.scss */
+/* line 148, scss/content.scss */
 li.header dl.icon dt .list-inner {
   /* Tweak for headers alignment when folder icon used */
   padding-left: 0;
   padding-right: 50px; }
 
 /* Forum list column styles */
-/* line 151, scss/content.scss */
+/* line 155, scss/content.scss */
 dl.icon {
   background-position: 10px 50%;
   /* Position of folder icon */
   background-repeat: no-repeat; }
 
-/* line 156, scss/content.scss */
+/* line 160, scss/content.scss */
 dl.icon dt {
   background-repeat: no-repeat;
   background-position: 5px 95%;
   /* Position of topic icon */ }
 
-/* line 161, scss/content.scss */
+/* line 165, scss/content.scss */
 dl.icon dt .list-inner {
   padding-left: 45px;
   /* Space for folder icon */ }
 
-/* line 169, scss/content.scss */
+/* line 173, scss/content.scss */
 dd.posts, dd.topics, dd.views, dd.extra, dd.mark {
   width: 80px;
   text-align: center;
@@ -171,40 +174,40 @@ dd.posts, dd.topics, dd.views, dd.extra, dd.mark {
   font-size: 1.2em; }
 
 /* List in forum description */
-/* line 178, scss/content.scss */
+/* line 182, scss/content.scss */
 dl.icon dt ol,
 dl.icon dt ul {
   list-style-position: inside;
   margin-left: 1em; }
 
-/* line 183, scss/content.scss */
+/* line 187, scss/content.scss */
 dl.icon dt li {
   display: list-item;
   list-style-type: inherit; }
 
-/* line 188, scss/content.scss */
+/* line 192, scss/content.scss */
 dd.lastpost, dd.redirect, dd.moderation, dd.time, dd.info {
   width: 250px;
   font-size: 1.1em; }
 
-/* line 193, scss/content.scss */
+/* line 197, scss/content.scss */
 dd.redirect {
   line-height: 2.5em; }
 
-/* line 197, scss/content.scss */
+/* line 201, scss/content.scss */
 dd.time {
   line-height: 200%; }
 
-/* line 201, scss/content.scss */
+/* line 205, scss/content.scss */
 dd.lastpost span, ul.topiclist dd.info span, ul.topiclist dd.time span, dd.redirect span, dd.moderation span {
   display: block;
   padding-left: 5px; }
 
-/* line 206, scss/content.scss */
+/* line 210, scss/content.scss */
 dd.extra, dd.mark {
   line-height: 200%; }
 
-/* line 210, scss/content.scss */
+/* line 214, scss/content.scss */
 dd.option {
   width: 125px;
   line-height: 200%;
@@ -212,20 +215,20 @@ dd.option {
   font-size: 1.1em; }
 
 /* Container for post/reply buttons and pagination */
-/* line 218, scss/content.scss */
+/* line 222, scss/content.scss */
 .topic-actions {
   margin-bottom: 3px;
   font-size: 1.1em;
   height: 28px;
   min-height: 28px; }
 
-/* line 224, scss/content.scss */
+/* line 228, scss/content.scss */
 div[class].topic-actions {
   height: auto; }
 
 /* Post body styles
 ----------------------------------------*/
-/* line 230, scss/content.scss */
+/* line 234, scss/content.scss */
 .postbody {
   padding: 0;
   line-height: 1.48em;
@@ -233,16 +236,16 @@ div[class].topic-actions {
   float: left;
   clear: both; }
 
-/* line 238, scss/content.scss */
+/* line 242, scss/content.scss */
 .postbody .ignore {
   font-size: 1.1em; }
 
-/* line 242, scss/content.scss */
+/* line 246, scss/content.scss */
 .postbody h3.first {
   /* The first post on the page uses this */
   font-size: 1.7em; }
 
-/* line 247, scss/content.scss */
+/* line 251, scss/content.scss */
 .postbody h3 {
   /* Postbody requires a different h3 format - so change it here */
   font-size: 1.5em;
@@ -253,65 +256,65 @@ div[class].topic-actions {
   font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
   line-height: 125%; }
 
-/* line 258, scss/content.scss */
+/* line 262, scss/content.scss */
 .postbody h3 img {
   /* Also see tweaks.css */
   vertical-align: bottom; }
 
-/* line 263, scss/content.scss */
+/* line 267, scss/content.scss */
 .postbody .content {
   font-size: 1.3em; }
 
-/* line 267, scss/content.scss */
+/* line 271, scss/content.scss */
 .search .postbody {
   width: 68%; }
 
 /* Topic review panel
 ----------------------------------------*/
-/* line 273, scss/content.scss */
+/* line 277, scss/content.scss */
 #review {
   margin-top: 2em; }
 
-/* line 277, scss/content.scss */
+/* line 281, scss/content.scss */
 #topicreview {
   padding-right: 5px;
   overflow: auto;
   height: 300px; }
 
-/* line 283, scss/content.scss */
+/* line 287, scss/content.scss */
 #topicreview .postbody {
   width: auto;
   float: none;
   margin: 0;
   height: auto; }
 
-/* line 290, scss/content.scss */
+/* line 294, scss/content.scss */
 #topicreview .post {
   height: auto; }
 
-/* line 294, scss/content.scss */
+/* line 298, scss/content.scss */
 #topicreview h2 {
   border-bottom-width: 0; }
 
-/* line 298, scss/content.scss */
+/* line 302, scss/content.scss */
 .post-ignore .postbody {
   display: none; }
 
 /* MCP Post details
 ----------------------------------------*/
-/* line 305, scss/content.scss */
+/* line 309, scss/content.scss */
 #post_details {
   /* This will only work in IE7+, plus the others */
   overflow: auto;
   max-height: 300px; }
 
-/* line 312, scss/content.scss */
+/* line 316, scss/content.scss */
 #expand {
   clear: both; }
 
 /* Content container styles
 ----------------------------------------*/
-/* line 318, scss/content.scss */
+/* line 322, scss/content.scss */
 .content {
   min-height: 3em;
   overflow: hidden;
@@ -320,7 +323,7 @@ div[class].topic-actions {
   font-size: 1em;
   padding-bottom: 1px; }
 
-/* line 327, scss/content.scss */
+/* line 331, scss/content.scss */
 .content h2, .panel h2 {
   font-weight: normal;
   border-bottom: 1px solid transparent;
@@ -329,28 +332,28 @@ div[class].topic-actions {
   margin-bottom: 0.5em;
   padding-bottom: 0.5em; }
 
-/* line 336, scss/content.scss */
+/* line 340, scss/content.scss */
 .panel h3 {
   margin: 0.5em 0; }
 
-/* line 340, scss/content.scss */
+/* line 344, scss/content.scss */
 .panel p {
   font-size: 1.2em;
   margin-bottom: 1em;
   line-height: 1.4em; }
 
-/* line 346, scss/content.scss */
+/* line 350, scss/content.scss */
 .content p {
   font-family: "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
   font-size: 1.2em;
   margin-bottom: 1em;
   line-height: 1.4em; }
 
-/* line 353, scss/content.scss */
+/* line 357, scss/content.scss */
 span.corners-top, span.corners-bottom {
   display: none; }
 
-/* line 357, scss/content.scss */
+/* line 361, scss/content.scss */
 dl.faq {
   font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
   font-size: 1.1em;
@@ -358,30 +361,30 @@ dl.faq {
   margin-bottom: 2em;
   line-height: 1.4em; }
 
-/* line 365, scss/content.scss */
+/* line 369, scss/content.scss */
 dl.faq dt {
   font-weight: bold; }
 
-/* line 369, scss/content.scss */
+/* line 373, scss/content.scss */
 .content dl.faq {
   font-size: 1.2em;
   margin-bottom: 0.5em; }
 
-/* line 374, scss/content.scss */
+/* line 378, scss/content.scss */
 .content li {
   list-style-type: inherit; }
 
-/* line 378, scss/content.scss */
+/* line 382, scss/content.scss */
 .content ul, .content ol {
   margin-bottom: 1em;
   margin-left: 3em; }
 
-/* line 383, scss/content.scss */
+/* line 387, scss/content.scss */
 .posthilit {
   padding: 0 2px 1px 2px; }
 
 /* Post author */
-/* line 388, scss/content.scss */
+/* line 392, scss/content.scss */
 p.author {
   margin: 0 15em 0.6em 0;
   padding: 0 0 5px 0;
@@ -390,7 +393,7 @@ p.author {
   line-height: 1.2em; }
 
 /* Post signature */
-/* line 397, scss/content.scss */
+/* line 401, scss/content.scss */
 .signature {
   margin-top: 1.5em;
   padding-top: 0.2em;
@@ -401,24 +404,24 @@ p.author {
   overflow: hidden;
   width: 100%; }
 
-/* line 408, scss/content.scss */
+/* line 412, scss/content.scss */
 dd .signature {
   margin: 0;
   padding: 0;
   clear: none;
   border: none; }
 
-/* line 415, scss/content.scss */
+/* line 419, scss/content.scss */
 .signature li {
   list-style-type: inherit; }
 
-/* line 419, scss/content.scss */
+/* line 423, scss/content.scss */
 .signature ul, .signature ol {
   margin-bottom: 1em;
   margin-left: 3em; }
 
 /* Post noticies */
-/* line 425, scss/content.scss */
+/* line 429, scss/content.scss */
 .notice {
   font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
   width: auto;
@@ -430,7 +433,7 @@ dd .signature {
   line-height: 130%; }
 
 /* Jump to post link for now */
-/* line 437, scss/content.scss */
+/* line 441, scss/content.scss */
 ul.searchresults {
   list-style: none;
   text-align: right;
@@ -439,7 +442,7 @@ ul.searchresults {
 /* BB Code styles
 ----------------------------------------*/
 /* Quote block */
-/* line 446, scss/content.scss */
+/* line 450, scss/content.scss */
 blockquote {
   background: transparent none 6px 8px no-repeat;
   border: 1px solid transparent;
@@ -448,13 +451,13 @@ blockquote {
   overflow: hidden;
   padding: 5px; }
 
-/* line 455, scss/content.scss */
+/* line 459, scss/content.scss */
 blockquote blockquote {
   /* Nested quotes */
   font-size: 1em;
   margin: 0.5em 1px 0 15px; }
 
-/* line 461, scss/content.scss */
+/* line 465, scss/content.scss */
 blockquote cite {
   /* Username/source of quoter */
   font-style: normal;
@@ -463,22 +466,22 @@ blockquote cite {
   display: block;
   font-size: 0.9em; }
 
-/* line 470, scss/content.scss */
+/* line 474, scss/content.scss */
 blockquote cite cite {
   font-size: 1em; }
 
-/* line 474, scss/content.scss */
+/* line 478, scss/content.scss */
 blockquote.uncited {
   padding-top: 25px; }
 
 /* Code block */
-/* line 479, scss/content.scss */
+/* line 483, scss/content.scss */
 dl.codebox {
   padding: 3px;
   border: 1px solid transparent;
   font-size: 1em; }
 
-/* line 485, scss/content.scss */
+/* line 489, scss/content.scss */
 dl.codebox dt {
   text-transform: uppercase;
   border-bottom: 1px solid transparent;
@@ -487,11 +490,11 @@ dl.codebox dt {
   font-weight: bold;
   display: block; }
 
-/* line 494, scss/content.scss */
+/* line 498, scss/content.scss */
 blockquote dl.codebox {
   margin-left: 0; }
 
-/* line 498, scss/content.scss */
+/* line 502, scss/content.scss */
 dl.codebox code {
   /* Also see tweaks.css */
   overflow: auto;
@@ -506,7 +509,7 @@ dl.codebox code {
 
 /* Attachments
 ----------------------------------------*/
-/* line 513, scss/content.scss */
+/* line 517, scss/content.scss */
 .attachbox {
   float: left;
   width: auto;
@@ -515,63 +518,63 @@ dl.codebox code {
   border: 1px dashed transparent;
   clear: left; }
 
-/* line 522, scss/content.scss */
+/* line 526, scss/content.scss */
 .attachbox dt {
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase; }
 
-/* line 527, scss/content.scss */
+/* line 531, scss/content.scss */
 .attachbox dd {
   margin-top: 4px;
   padding-top: 4px;
   clear: left;
   border-top: 1px solid transparent; }
 
-/* line 534, scss/content.scss */
+/* line 538, scss/content.scss */
 .attachbox dd dd {
   border: none; }
 
-/* line 538, scss/content.scss */
+/* line 542, scss/content.scss */
 .attachbox p {
   line-height: 110%;
   font-weight: normal;
   clear: left; }
 
-/* line 545, scss/content.scss */
+/* line 549, scss/content.scss */
 .attachbox p.stats {
   line-height: 110%;
   font-weight: normal;
   clear: left; }
 
-/* line 551, scss/content.scss */
+/* line 555, scss/content.scss */
 .attach-image {
   margin: 3px 0;
   width: 100%;
   max-height: 350px;
   overflow: auto; }
 
-/* line 558, scss/content.scss */
+/* line 562, scss/content.scss */
 .attach-image img {
   border: 1px solid transparent;
   /*	cursor: move; */
   cursor: default; }
 
 /* Inline image thumbnails */
-/* line 565, scss/content.scss */
+/* line 569, scss/content.scss */
 div.inline-attachment dl.thumbnail, div.inline-attachment dl.file {
   display: block;
   margin-bottom: 4px; }
 
-/* line 570, scss/content.scss */
+/* line 574, scss/content.scss */
 div.inline-attachment p {
   font-size: 100%; }
 
-/* line 574, scss/content.scss */
+/* line 578, scss/content.scss */
 dl.file {
   font-family: Verdana, Arial, Helvetica, sans-serif;
   display: block; }
 
-/* line 579, scss/content.scss */
+/* line 583, scss/content.scss */
 dl.file dt {
   text-transform: none;
   margin: 0;
@@ -579,47 +582,47 @@ dl.file dt {
   font-weight: bold;
   font-family: Verdana, Arial, Helvetica, sans-serif; }
 
-/* line 587, scss/content.scss */
+/* line 591, scss/content.scss */
 dl.file dd {
   margin: 0;
   padding: 0; }
 
-/* line 592, scss/content.scss */
+/* line 596, scss/content.scss */
 dl.thumbnail img {
   padding: 3px;
   border: 1px solid transparent; }
 
-/* line 597, scss/content.scss */
+/* line 601, scss/content.scss */
 dl.thumbnail dd {
   font-style: italic;
   font-family: Verdana, Arial, Helvetica, sans-serif; }
 
-/* line 602, scss/content.scss */
+/* line 606, scss/content.scss */
 .attachbox dl.thumbnail dd {
   font-size: 100%; }
 
-/* line 606, scss/content.scss */
+/* line 610, scss/content.scss */
 dl.thumbnail dt a:hover img {
   border: 1px solid transparent; }
 
 /* Post poll styles
 ----------------------------------------*/
-/* line 612, scss/content.scss */
+/* line 616, scss/content.scss */
 fieldset.polls {
   font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif; }
 
-/* line 616, scss/content.scss */
+/* line 620, scss/content.scss */
 fieldset.polls dl {
   margin-top: 5px;
   border-top: 1px solid transparent;
   padding: 5px 0 0 0;
   line-height: 120%; }
 
-/* line 623, scss/content.scss */
+/* line 627, scss/content.scss */
 fieldset.polls dl.voted {
   font-weight: bold; }
 
-/* line 627, scss/content.scss */
+/* line 631, scss/content.scss */
 fieldset.polls dt {
   text-align: left;
   float: left;
@@ -630,7 +633,7 @@ fieldset.polls dt {
   margin: 0;
   font-size: 1.1em; }
 
-/* line 638, scss/content.scss */
+/* line 642, scss/content.scss */
 fieldset.polls dd {
   float: left;
   width: 10%;
@@ -639,15 +642,15 @@ fieldset.polls dd {
   margin-left: 0;
   font-size: 1.1em; }
 
-/* line 647, scss/content.scss */
+/* line 651, scss/content.scss */
 fieldset.polls dd.resultbar {
   width: 50%; }
 
-/* line 651, scss/content.scss */
+/* line 655, scss/content.scss */
 fieldset.polls dd input {
   margin: 2px 0; }
 
-/* line 655, scss/content.scss */
+/* line 659, scss/content.scss */
 fieldset.polls dd div {
   text-align: right;
   font-family: Arial, Helvetica, sans-serif;
@@ -656,14 +659,14 @@ fieldset.polls dd div {
   overflow: visible;
   min-width: 2%; }
 
-/* line 664, scss/content.scss */
+/* line 668, scss/content.scss */
 .pollbar1, .pollbar2, .pollbar3, .pollbar4, .pollbar5 {
   border-bottom: 1px solid transparent;
   border-right: 1px solid transparent; }
 
 /* Poster profile block
 ----------------------------------------*/
-/* line 671, scss/content.scss */
+/* line 675, scss/content.scss */
 .postprofile {
   /* Also see tweaks.css */
   margin: 5px 0 10px 0;
@@ -673,69 +676,69 @@ fieldset.polls dd div {
   float: right;
   display: inline; }
 
-/* line 681, scss/content.scss */
+/* line 685, scss/content.scss */
 .postprofile dd, .postprofile dt {
   line-height: 1.2em;
   margin-left: 8px; }
 
-/* line 686, scss/content.scss */
+/* line 690, scss/content.scss */
 .postprofile dd {
   overflow: hidden;
   text-overflow: ellipsis; }
 
-/* line 691, scss/content.scss */
+/* line 695, scss/content.scss */
 .postprofile strong {
   font-weight: normal; }
 
-/* line 695, scss/content.scss */
+/* line 699, scss/content.scss */
 .avatar {
   border: none;
   margin-bottom: 3px; }
 
-/* line 700, scss/content.scss */
+/* line 704, scss/content.scss */
 .online {
   background-image: none;
   background-position: 100% 0;
   background-repeat: no-repeat; }
 
 /* Poster profile used by search*/
-/* line 707, scss/content.scss */
+/* line 711, scss/content.scss */
 .search .postprofile {
   width: 30%; }
 
 /* pm list in compose message if mass pm is enabled */
-/* line 712, scss/content.scss */
+/* line 716, scss/content.scss */
 dl.pmlist dt {
   width: 60% !important; }
 
-/* line 716, scss/content.scss */
+/* line 720, scss/content.scss */
 dl.pmlist dt textarea {
   width: 95%; }
 
-/* line 720, scss/content.scss */
+/* line 724, scss/content.scss */
 dl.pmlist dd {
   margin-left: 61% !important;
   margin-bottom: 2px; }
 
-/* line 725, scss/content.scss */
+/* line 729, scss/content.scss */
 .topic-actions div.dl_links {
   padding: 10px 0 0 10px; }
 
-/* line 729, scss/content.scss */
+/* line 733, scss/content.scss */
 div.dl_links {
   display: inline-block;
   text-transform: none; }
 
-/* line 734, scss/content.scss */
+/* line 738, scss/content.scss */
 .dl_links strong {
   font-weight: bold; }
 
-/* line 738, scss/content.scss */
+/* line 742, scss/content.scss */
 .dl_links ul {
   list-style-type: none;
   margin: 0;
   display: inline-block; }
 
-/* line 744, scss/content.scss */
+/* line 748, scss/content.scss */
 .dl_links li {
   display: inline-block; }

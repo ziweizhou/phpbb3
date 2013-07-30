@@ -141,6 +141,12 @@ fieldset.quick-login {
 	width: 60%;
 }
 
+html[lang="ja"]{
+	fieldset.quick-login{
+		width: 73%;
+	}
+}
+
 fieldset.quick-login input {
 	width: auto;
 }

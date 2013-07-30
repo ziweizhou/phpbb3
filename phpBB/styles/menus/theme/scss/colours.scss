@@ -135,12 +135,12 @@ a.topictitle:active {
 }
 
 .forabg {
-	background-color: #333;
+	background-color: #5d5d5d;
 	//background-image: url("./images/bg_list.gif");
 }
 
 .forumbg {
-	background-color: #333;
+	background-color: #5d5d5d;
 	//background-image: url("./images/bg_header.gif");
 }
 
@@ -392,6 +392,10 @@ ul.forums {
 
 ul.topiclist li {
 	color: #4C5D77;
+
+	&.header a{
+		color: white !important;
+	}
 }
 
 ul.topiclist dd {
@@ -416,7 +420,7 @@ li.row {
 	border-bottom-color: #dedede;
 
 	&:first-child{
-		border-bottom: none;
+		//border-bottom: none;
 	}
 }
 
